@@ -17,10 +17,16 @@ function formatDay(date) {
 
 
 function displayWeatherCondition(response) {
-   document.querySelector("#city").innerHTML = response.data.name;
+  document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
   let iconElement =document.querySelector("#icon");
-  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`) 
+  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`)
+  
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML=response.data.main.humidity;
+
+  let windElement = document.querySelector("#wind");
+    windElement.innerHTML= Math.round(response.data.main.wind.speed);
   }
 
 function searchCity(city) {
