@@ -45,7 +45,8 @@
                 </button>
             </div>
             <p>
-            <div class="today">Today <br /></div>
+            <div class="today">Today</div>
+            <div class="description" id=description>Sunny</div>
             <div>
                 <img 
                     src= "http://openweathermap.org/img/wn/10d@2x.png"
@@ -54,9 +55,11 @@
                     class="float-left"
                 />
                 </div>
-            <h1>
-                <div class="temperature" id="temperature"> 80 </div>
-                           </h1>
+         
+                <div class="temperature"><strong id="temperature"> 80 </strong>
+                    <span class="units"><a href="#" id="celsius-link" class="active">°C</a> |
+                        <a href="#" id="fahrenheit-link">°F</a></span> </div>
+                          
             
             <div class=cityName id="city"> City Name
             </div>

@@ -34,6 +34,13 @@ section {
   margin-left: 10px;
 }
 
+.description {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: lighter;
+  text-transform: capitalize;
+}
+
 .cityName {
   margin-left: 10px;
 }
@@ -45,12 +52,22 @@ section {
   text-align: center;
 }
 
+.temperature {
+  font-size: 50px;
+}
+
+.temperature .units {
+  position: relative;
+  font-size: 20px;
+  top: -30px;
+}
+
 ul {
   position: relative;
-  margin: 0px;
+  margin: 0 auto;
   padding: 0px;
-  top: 150px;
-  left: 25px;
+  top: 155px;
+  left: 30px;
 }
 
 li {
